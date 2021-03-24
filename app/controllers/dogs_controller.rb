@@ -21,4 +21,6 @@ class DogsController < ApplicationController
         @dog = Dog.find(params[:id])
     end
 
+    # ayyy we did it
+
 end
