@@ -1,7 +1,9 @@
 <h1> index </h1>
 <ul>
-<% @dogs.each do |dog| %>
+<% @dogs.each do |dog|  %>
     <li><%= link_to dog.name, dog %></li>
+       Number of employees: <%= dog.employees.count %>
 <% end %>
 
 </ul>
+<%= button_to "Sort Dogs", action: "sort_index" %>
